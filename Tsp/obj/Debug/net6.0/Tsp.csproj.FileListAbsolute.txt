@@ -1,0 +1,15 @@
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/bin/Debug/net6.0/Tsp
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/bin/Debug/net6.0/Tsp.deps.json
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/bin/Debug/net6.0/Tsp.runtimeconfig.json
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/bin/Debug/net6.0/Tsp.dll
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/bin/Debug/net6.0/Tsp.pdb
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/Tsp.csproj.AssemblyReference.cache
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/Tsp.GeneratedMSBuildEditorConfig.editorconfig
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/Tsp.AssemblyInfoInputs.cache
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/Tsp.AssemblyInfo.cs
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/Tsp.dll
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/refint/Tsp.dll
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/Tsp.pdb
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/Tsp.genruntimeconfig.cache
+/media/style_m/CrucialSSD/Github/AI-TspProblem/Tsp/obj/Debug/net6.0/ref/Tsp.dll
