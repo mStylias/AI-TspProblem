@@ -8,15 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cca85ff-f363-4e96-bb33-f5e08c3dcdd8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Presentation.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/Area.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/City.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/Tester.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/City.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/Tsp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Tsp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Tester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Tester.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -89,7 +85,7 @@
       <updated>1655141713478</updated>
       <workItem from="1655141724344" duration="3695000" />
       <workItem from="1655150008183" duration="7580000" />
-      <workItem from="1655192575769" duration="2807000" />
+      <workItem from="1655192575769" duration="4492000" />
     </task>
     <servers />
   </component>

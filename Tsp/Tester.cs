@@ -2,19 +2,26 @@ namespace Tsp;
 
 public class Tester
 {
-    public void Test1()
+    public void TestRequiredBits()
     {
-        // var bits = BitAllocator.CalculateNecessaryBits(17);
-        // Console.WriteLine(bits);
+        var bits = BitsCalculator.CalculateRequiredBits(2);
+        Console.WriteLine(bits);
 
         byte b = 0b0010;
-        int bitNumber = 1;
         
-        var bit = (b >> bitNumber) & 1;
-        Console.WriteLine(Convert.ToString(b, 2));
+        
+        
+    }
+
+    public void TestBitFromByte()
+    {
+        byte b = 0b0110;
+        int bitNumber = 3;
+        
+        Console.WriteLine(BitsCalculator.GetBitFromByte(b, bitNumber));
     }
     
-    public void Test2()
+    public void TestArea()
     {
         Area area = new Area(5, 3, 25);
         

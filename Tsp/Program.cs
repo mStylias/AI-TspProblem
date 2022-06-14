@@ -2,5 +2,5 @@
 
 Tester tester = new Tester();
 
-//tester.Test1();
-tester.Test2();
+// tester.TestRequiredBits();
+tester.TestBitFromByte();

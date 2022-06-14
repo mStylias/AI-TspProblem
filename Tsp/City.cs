@@ -4,15 +4,15 @@ public class City
 {
     public Byte ByteValue { get; }
 
-    public City(byte byteByteValue)
+    public City(byte byteValue)
     {
-        ByteValue = byteByteValue;
+        ByteValue = byteValue;
     }
 
     /// <summary>
-    /// Displays the town in binary format
+    /// Displays the city in binary format
     /// </summary>
-    public void DisplayValueInBytes()
+    public void DisplayInBinary()
     {
         Console.WriteLine(Convert.ToString(ByteValue, 2).PadLeft(8, '0'));
     }
