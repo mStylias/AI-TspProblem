@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Tsp;
+
+Tester tester = new Tester();
+
+//tester.Test1();
+tester.Test2();
