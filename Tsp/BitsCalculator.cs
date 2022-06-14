@@ -31,8 +31,20 @@ public static class BitsCalculator
     public static int GetBitFromByte(Byte targetByte, int position)
     {
         var bit = (targetByte >> position) & 1;
-        Console.WriteLine(Convert.ToString(targetByte, 2).PadLeft(8, '0'));
-
+        //Console.WriteLine(Convert.ToString(targetByte, 2).PadLeft(8, '0'));
         return bit;
+    }
+
+    /// <summary>
+    /// Formats the given byte to contain the given number of bits.
+    /// <para> E.g. If 1 is the given byte and the number of bits is 4 the result
+    /// would be the following string: 0001 </para>
+    /// </summary>
+    /// <param name="targetByte"> The target byte </param>
+    /// <param name="numberOfBits"> The number of bytes that the bit should contain </param>
+    /// <returns></returns>
+    public static string FormatByte(byte targetByte, int numberOfBits)
+    {
+        return Convert.ToString(targetByte, 2).PadLeft(numberOfBits, '0');
     }
 }

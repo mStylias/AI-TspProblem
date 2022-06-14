@@ -9,13 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5cca85ff-f363-4e96-bb33-f5e08c3dcdd8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Area.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Area.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/City.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Tester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Tester.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" afterDir="false" />
@@ -28,6 +28,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7e1197cbb266daba69ef4cbb67d24c5cae86e823dde0e781ad1793851ce2d6a/Convert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/caccb9a16b7398be8d7bb6172f25e9c31e7d93eca254e79c3c6ff3ce733da8c/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -85,7 +86,7 @@
       <updated>1655141713478</updated>
       <workItem from="1655141724344" duration="3695000" />
       <workItem from="1655150008183" duration="7580000" />
-      <workItem from="1655192575769" duration="4492000" />
+      <workItem from="1655192575769" duration="6318000" />
     </task>
     <servers />
   </component>
@@ -96,5 +97,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tsp/Area.cs</url>
+          <line>22</line>
+          <properties documentPath="$PROJECT_DIR$/Tsp/Area.cs" initialLine="22" containingFunctionPresentation="constructor 'Area'">
+            <startOffsets>
+              <option value="728" />
+            </startOffsets>
+            <endOffsets>
+              <option value="753" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

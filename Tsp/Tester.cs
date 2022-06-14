@@ -6,11 +6,6 @@ public class Tester
     {
         var bits = BitsCalculator.CalculateRequiredBits(2);
         Console.WriteLine(bits);
-
-        byte b = 0b0010;
-        
-        
-        
     }
 
     public void TestBitFromByte()
@@ -20,10 +15,16 @@ public class Tester
         
         Console.WriteLine(BitsCalculator.GetBitFromByte(b, bitNumber));
     }
+
+    public void TestByteFormat()
+    {
+        byte b = 0;
+        Console.WriteLine(BitsCalculator.FormatByte(b, 4));
+    }
     
     public void TestArea()
     {
-        Area area = new Area(5, 3, 25);
+        Area area = new Area(6, 5, 25);
         
     }
 }

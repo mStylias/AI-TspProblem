@@ -5,7 +5,8 @@ namespace Tsp;
 /// </summary>
 public class Area
 {
-    private readonly int NUMBER_OF_CITIES;
+    public readonly int NUMBER_OF_CITIES;
+    public readonly int REQUIRED_BITS_NUM;
     private readonly int MIN_DISTANCE;
     private readonly int MAX_DISTANCE;
     public List<City> Cities { get; }
@@ -32,6 +33,8 @@ public class Area
         }
         MIN_DISTANCE = minDistance;
         MAX_DISTANCE = maxDistance;
+
+        REQUIRED_BITS_NUM = BitsCalculator.CalculateRequiredBits(NUMBER_OF_CITIES);
 
         Cities = CreateCities();
         CitiesDistances = GenerateRandomDistances();
@@ -76,11 +79,15 @@ public class Area
         {
             for (int innerCityIndex = outerCityIndex+1; innerCityIndex < NUMBER_OF_CITIES; innerCityIndex++)
             {
+                // Create a city pair from the bytes of the two cities
+                var city1 = BitsCalculator.FormatByte(Cities[outerCityIndex].ByteValue, REQUIRED_BITS_NUM);
+                var city2 = BitsCalculator.FormatByte(Cities[innerCityIndex].ByteValue, REQUIRED_BITS_NUM);
+                string cityPair = $"{city1}-{city2}";
+
                 var randomDistance = randomGenerator.Next(MIN_DISTANCE, MAX_DISTANCE);
-                // Create a town pair from the bytes of the two cities
-                string cityPair = $"{Cities[outerCityIndex].ByteValue}-{Cities[innerCityIndex].ByteValue}";
+                
                 cityDistances.Add(cityPair, randomDistance);
-                // Console.WriteLine($"{cityPair} - {randomDistance}");
+                Console.WriteLine($"{cityPair} -> {randomDistance}");
             }
         }
 

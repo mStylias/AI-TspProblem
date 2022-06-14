@@ -3,4 +3,6 @@
 Tester tester = new Tester();
 
 // tester.TestRequiredBits();
-tester.TestBitFromByte();
+// tester.TestBitFromByte();
+// tester.TestByteFormat();
+tester.TestArea();
