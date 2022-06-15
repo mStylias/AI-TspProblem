@@ -1,4 +1,4 @@
-namespace Tsp;
+namespace Tsp.Mathematics;
 
 public static class BitsCalculator
 {

@@ -8,18 +8,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cca85ff-f363-4e96-bb33-f5e08c3dcdd8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Tsp/IGeneticAlgorithm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/Logging/DisplayFormat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/Mathematics/ExtraMath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/CitiesDistances.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Cost.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Factories/CitiesFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/PathManagement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TspOptions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/Area.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Area.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/City.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Area.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Mathematics/BitsCalculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/City.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Tester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Tester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/refint/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/refint/Tsp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/Tsp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Tsp.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/Tsp.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Tsp.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +48,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/44fe584509194d39a35c7f3665e45a179ec200/_b3ead/IList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/44fe584509194d39a35c7f3665e45a179ec200/_efc3c/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7e1197cbb266daba69ef4cbb67d24c5cae86e823dde0e781ad1793851ce2d6a/Convert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/caccb9a16b7398be8d7bb6172f25e9c31e7d93eca254e79c3c6ff3ce733da8c/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d4f98ebdd878db4fbd98872756eb7be6ad9e468fe5cd6b16385d8c4993109a/List.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,6 +77,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -86,7 +111,10 @@
       <updated>1655141713478</updated>
       <workItem from="1655141724344" duration="3695000" />
       <workItem from="1655150008183" duration="7580000" />
-      <workItem from="1655192575769" duration="6318000" />
+      <workItem from="1655192575769" duration="17342000" />
+      <workItem from="1655299340539" duration="260000" />
+      <workItem from="1655299639123" duration="13210000" />
+      <workItem from="1655315023878" duration="9937000" />
     </task>
     <servers />
   </component>
@@ -102,17 +130,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Tsp/Area.cs</url>
-          <line>22</line>
-          <properties documentPath="$PROJECT_DIR$/Tsp/Area.cs" initialLine="22" containingFunctionPresentation="constructor 'Area'">
-            <startOffsets>
-              <option value="728" />
-            </startOffsets>
-            <endOffsets>
-              <option value="753" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesman.cs</url>
+          <line>12</line>
+          <properties documentPath="$PROJECT_DIR$/Tsp/TravelingSalesman.cs" initialLine="9" containingFunctionPresentation="constructor 'TravelingSalesman'" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
