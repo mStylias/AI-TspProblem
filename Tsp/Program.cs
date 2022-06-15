@@ -8,7 +8,7 @@ using Tsp.Logging;
 
 Tester tester = new Tester
 {
-    DisplayFormat = DisplayFormat.Binary
+    DisplayFormat = DisplayFormat.Decimal
 };
 
 tester.TestCities();

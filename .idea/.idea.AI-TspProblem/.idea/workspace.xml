@@ -8,39 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cca85ff-f363-4e96-bb33-f5e08c3dcdd8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tsp/IGeneticAlgorithm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/Logging/DisplayFormat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/Mathematics/ExtraMath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/CitiesDistances.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Cost.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Factories/CitiesFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/PathManagement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TspOptions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tsp/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/Area.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/BitsCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Mathematics/BitsCalculator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/City.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Mathematics/ExtraMath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Mathematics/ExtraMath.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Tester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Tester.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/Cost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Cost.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/refint/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/refint/Tsp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/Tsp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Tsp.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/Tsp.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Tsp.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +93,7 @@
       <workItem from="1655192575769" duration="17342000" />
       <workItem from="1655299340539" duration="260000" />
       <workItem from="1655299639123" duration="13210000" />
-      <workItem from="1655315023878" duration="9937000" />
+      <workItem from="1655315023878" duration="10699000" />
     </task>
     <servers />
   </component>

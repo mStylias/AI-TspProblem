@@ -52,7 +52,7 @@ public class Tester
         var solutionRatings = new Dictionary<List<City>, double>();
         foreach (var path in paths)
         {
-            var cost = Cost.CalculatePathCost(path, citiesDistances);
+            var cost = ExtraMath.InvertNumber(Cost.CalculatePathCost(path, citiesDistances));
             solutionRatings.Add(path, cost);
         }
 

@@ -4,7 +4,8 @@ public static class Logger
 {
     public static void DisplayCities(DisplayFormat format, List<City> cities)
     {
-        Console.WriteLine("Cities: -");
+        Console.WriteLine("Cities:");
+        Console.Write("-");
         foreach (var city in cities)
         {
             switch (format)

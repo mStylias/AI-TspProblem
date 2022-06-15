@@ -42,6 +42,6 @@ public static class Cost
             cost += citiesDistances.GetDistanceOf(path[i], path[i + 1]);
         }
 
-        return ExtraMath.InvertInt(cost);
+        return ExtraMath.InvertNumber(cost);
     }
 }

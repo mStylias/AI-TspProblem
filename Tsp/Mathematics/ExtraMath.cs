@@ -3,18 +3,18 @@ namespace Tsp.Mathematics;
 public static class ExtraMath
 {
     /// <summary>
-    /// Inverts the given integer
+    /// Inverts the given number
     /// </summary>
-    /// <param name="intToInvert"></param>
+    /// <param name="numberToInvert"></param>
     /// <returns> A double value that corresponds to the inverted integer</returns>
     /// <exception cref="InvalidOperationException"></exception>
-    public static double InvertInt(int intToInvert)
+    public static double InvertNumber<T>(T numberToInvert)
     {
-        if (intToInvert == 0)
+        if (numberToInvert.Equals(0))
         {
             throw new InvalidOperationException("Can't divide by 0");
         }
         
-        return 1 / (double)intToInvert;
+        return 1 / Convert.ToDouble(numberToInvert);
     }
 }
