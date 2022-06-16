@@ -17,7 +17,7 @@ public class TravelingSalesmanProblem :
     /// </summary>
     public void Solve()
     {
-        var cities = CreatePopulation(Options.NumberOfCities);
+        var cities = CreatePopulation();
 
         while (IsAcceptableSolutionFound() == false)
         {
@@ -30,10 +30,10 @@ public class TravelingSalesmanProblem :
         Console.WriteLine($"The best path that was found is");
     }
 
-    public List<City> CreatePopulation(int numberOfCities)
+    public List<City> CreatePopulation()
     {
         CitiesFactory cityFactory = new CitiesFactory();
-        return cityFactory.CreateMultipleCities(numberOfCities);
+        return cityFactory.CreateMultipleCities(Options.NumberOfCities);
     }
 
     public ICollection<List<City>> CreateRandomSolutions(List<City> cities)
@@ -57,11 +57,6 @@ public class TravelingSalesmanProblem :
         }
 
         return solutionRatings;
-    }
-
-    public double FitnessFunction(List<City> solution)
-    {
-        throw new NotImplementedException();
     }
 
     public ICollection<string> FormCouples(List<City> population, ICollection<KeyValuePair<List<City>, double>> ratedSolutions)

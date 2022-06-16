@@ -7,7 +7,14 @@ namespace Tsp;
 public class Tester
 {
     public DisplayFormat DisplayFormat { get; set; }
+    private TravelingSalesmanProblem _tsp;
 
+    public Tester()
+    {
+         TspOptions options = new TspOptions(10, 10, 5, 25);
+         _tsp = new TravelingSalesmanProblem(options);
+    }
+    
     private static void DisplayTestPassed(int testNum)
     {
         Console.WriteLine($"\n------------------------------ TEST {testNum} PASSED ------------------------------");
@@ -15,49 +22,26 @@ public class Tester
     
     public void TestCities()
     {
-        CitiesFactory factory = new CitiesFactory();
-        var cities = factory.CreateMultipleCities(10);
-        Logger.DisplayCities(DisplayFormat, cities);
-
+        Logger.DisplayCities(DisplayFormat, _tsp.CreatePopulation());
         DisplayTestPassed(1);
     }
 
     public void TestPathManagement()
     {
-        CitiesFactory factory = new CitiesFactory();
-        var cities = factory.CreateMultipleCities(10);
+        var cities = _tsp.CreatePopulation();
+        var paths = _tsp.CreateRandomSolutions(cities);
         
-        PathManagement pathManagement = new PathManagement();
-        var paths = pathManagement.GenerateRandomPaths(10, cities);
         Logger.DisplayAllPaths(DisplayFormat, paths);
-
         DisplayTestPassed(2);
     }
 
     public void TestRateSolutions()
     {
-        // Create cities
-        CitiesFactory factory = new CitiesFactory();
-        var cities = factory.CreateMultipleCities(10);
-        
-        // Create paths
-        PathManagement pathManagement = new PathManagement();
-        var paths = pathManagement.GenerateRandomPaths(10, cities);
-        
-        // Generate random distance costs between all cities
-        var citiesDistances = new CitiesDistances();
-        citiesDistances.GenerateRandomDistanceCosts(cities,5, 30);
-        
-        // Calculate the cost of each available path and add it to the dictionary
-        var solutionRatings = new Dictionary<List<City>, double>();
-        foreach (var path in paths)
-        {
-            var cost = ExtraMath.InvertNumber(Cost.CalculatePathCost(path, citiesDistances));
-            solutionRatings.Add(path, cost);
-        }
+        var cities = _tsp.CreatePopulation();
+        var paths = _tsp.CreateRandomSolutions(cities);
+        var ratedSolutions = _tsp.RateSolutions(cities, paths);
 
-        Logger.DisplaySolutionsRating(solutionRatings, DisplayFormat);
-        
+        Logger.DisplaySolutionsRating(ratedSolutions, DisplayFormat);
         DisplayTestPassed(3);
     }
 }

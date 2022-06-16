@@ -14,7 +14,7 @@ public interface IGeneticAlgorithm<TPopulation, TSolution, TRate, TCouple>
     /// Creates the original population with the given size
     /// </summary>
     /// <returns> A generic type of population </returns>
-    public TPopulation CreatePopulation(int populationSize);
+    public TPopulation CreatePopulation();
 
     /// <summary>
     /// Creates a random and probably non optimal collection of solutions for the problem
@@ -29,12 +29,6 @@ public interface IGeneticAlgorithm<TPopulation, TSolution, TRate, TCouple>
     /// <param name="solutions"> A collection of the solutions to rate </param>
     /// <returns> A key-value collection of solutions and their ratings </returns>
     public ICollection<KeyValuePair<TSolution, TRate>> RateSolutions(TPopulation population, ICollection<TSolution> solutions);
-    
-    /// <summary>
-    /// The function that is used to rate a solution
-    /// </summary>
-    /// <returns> Returns a rating for the given solution </returns>
-    public TRate FitnessFunction(TSolution solution);
 
     /// <summary>
     /// Combine members of the population giving higher priority on high rated population members

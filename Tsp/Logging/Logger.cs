@@ -23,7 +23,7 @@ public static class Logger
         }
     }
     
-    public static void DisplayAllPaths(DisplayFormat format, List<List<City>> paths)
+    public static void DisplayAllPaths(DisplayFormat format, IEnumerable<List<City>> paths)
     {
         Console.WriteLine("City Paths:");
         foreach (var path in paths)
@@ -48,7 +48,7 @@ public static class Logger
         }
     }
 
-    public static void DisplaySolutionsRating(Dictionary<List<City>, double> solutionsRatings, DisplayFormat format)
+    public static void DisplaySolutionsRating(ICollection<KeyValuePair<List<City>, double>> solutionsRatings, DisplayFormat format)
     {
         Console.WriteLine("City Paths with costs:");
         foreach (var solutionRatings in solutionsRatings)
