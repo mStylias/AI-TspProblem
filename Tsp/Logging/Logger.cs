@@ -23,64 +23,56 @@ public static class Logger
         }
     }
     
-    public static void DisplayAllPaths(DisplayFormat format, IEnumerable<List<City>> paths)
+    public static void DisplayAllPaths(DisplayFormat format, IEnumerable<Path> paths)
     {
         Console.WriteLine("City Paths:");
         foreach (var path in paths)
         {
-            Console.Write("-");
-            foreach (var city in path)
-            {
-                switch (format)
-                {
-                    case DisplayFormat.Binary:
-                        Console.Write($"{city.FormattedByte}-");
-                        break;
-                    case DisplayFormat.Decimal:
-                        Console.Write($"{city.ByteValue}-");
-                        break;
-                    default:
-                        Console.Write("null");
-                        break;
-                }
-            }
+            DisplayPath(format, path.Cities);
             Console.WriteLine();
         }
     }
 
-    public static void DisplaySolutionsRating(ICollection<KeyValuePair<List<City>, double>> solutionsRatings, DisplayFormat format)
+    public static void DisplayPath(DisplayFormat format, IEnumerable<City> path)
     {
-        Console.WriteLine("City Paths with costs:");
-        foreach (var solutionRatings in solutionsRatings)
+        Console.Write("-");
+        foreach (var city in path)
         {
-            var path = solutionRatings.Key;
-            var cost = solutionRatings.Value;
-            
             switch (format)
             {
                 case DisplayFormat.Binary:
-                    Console.Write("-");
-                    foreach (var city in path)
-                    {
-                        Console.Write($"{city.FormattedByte}-");
-                    }
-                    
-                    Console.Write($" : Cost -> {cost}");
+                    Console.Write($"{city.FormattedByte}-");
                     break;
                 case DisplayFormat.Decimal:
-                    Console.Write("-");
-                    foreach (var city in path)
-                    {
-                        Console.Write($"{city.ByteValue}-");
-                    }
-                    
-                    Console.Write($" : Cost -> {cost}");
+                    Console.Write($"{city.ByteValue}-");
                     break;
                 default:
                     Console.Write("null");
                     break;
             }
-            Console.WriteLine();
+        }
+    }
+    
+    public static void DisplayPathsAndCosts(DisplayFormat format, List<Path> paths)
+    {
+        Console.WriteLine("City Paths with costs:");
+
+        foreach (var path in paths)
+        {
+            DisplayPath(format, path.Cities);
+            Console.WriteLine($" -> {path.Cost}");
+        }
+    }
+
+    public static void DisplayPathPairs(DisplayFormat format, List<PathPair> pathPairs, bool includeCosts)
+    {
+        for (int i = 0; i < pathPairs.Count; i++)
+        {
+            Console.WriteLine($"Couple {i + 1}");
+            DisplayPath(format, pathPairs[i].Path1.Cities);
+            if (includeCosts) Console.WriteLine($" -> {pathPairs[i].Path1.Cost}");
+            DisplayPath(format, pathPairs[i].Path2.Cities);
+            if (includeCosts) Console.WriteLine($" -> {pathPairs[i].Path2.Cost}");
         }
     }
 }

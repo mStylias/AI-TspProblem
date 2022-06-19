@@ -10,7 +10,6 @@ public class CitiesFactory
     /// and adds the to the given collection
     /// </summary>
     /// <param name="numberOfCities"> The size of the collection </param>
-    /// <param name="cities"> The collection to add the cities to </param>
     public List<City> CreateMultipleCities(int numberOfCities)
     {
         var byteFormat = BitsCalculator.CalculateRequiredBits(numberOfCities);

@@ -7,14 +7,14 @@ public class TspOptions
 {
     public int NumberOfCities { get; }
     public int NumberOfRandomPaths { get; }
-    public int MinimumDistanceCost { get; }
-    public int MaximumDistanceCost { get; }
+    public int MinDistanceCost { get; }
+    public int MaxDistanceCost { get; }
     
-    public TspOptions(int numberOfCities, int numberOfRandomPaths, int minimumDistanceCost, int maximumDistanceCost)
+    public TspOptions(int numberOfCities, int numberOfRandomPaths, int minDistanceCost, int maxDistanceCost)
     {
         NumberOfCities = numberOfCities;
         NumberOfRandomPaths = numberOfRandomPaths;
-        MinimumDistanceCost = minimumDistanceCost;
-        MaximumDistanceCost = maximumDistanceCost;
+        MinDistanceCost = minDistanceCost;
+        MaxDistanceCost = maxDistanceCost;
     }
 }

@@ -3,7 +3,7 @@ namespace Tsp;
 /// <summary>
 /// The general form of a genetic algorithm
 /// </summary>
-public interface IGeneticAlgorithm<TPopulation, TSolution, TRate, TCouple>
+public interface IGeneticAlgorithm<TPopulation, TSolution, TRate>
 {
     /// <summary>
     /// Solves the problem using the genetic algorithm
@@ -20,7 +20,7 @@ public interface IGeneticAlgorithm<TPopulation, TSolution, TRate, TCouple>
     /// Creates a random and probably non optimal collection of solutions for the problem
     /// </summary>
     /// <returns> A generic solution </returns>
-    public ICollection<TSolution> CreateRandomSolutions(TPopulation population);
+    public List<TSolution> CreateRandomSolutions(TPopulation population);
 
     /// <summary>
     /// Rates the created solutions
@@ -28,21 +28,21 @@ public interface IGeneticAlgorithm<TPopulation, TSolution, TRate, TCouple>
     /// <param name="population"> The population </param>
     /// <param name="solutions"> A collection of the solutions to rate </param>
     /// <returns> A key-value collection of solutions and their ratings </returns>
-    public ICollection<KeyValuePair<TSolution, TRate>> RateSolutions(TPopulation population, ICollection<TSolution> solutions);
+    public List<TRate> RateSolutions(TPopulation population, List<TSolution> solutions);
 
     /// <summary>
     /// Combine members of the population giving higher priority on high rated population members
     /// </summary>
-    /// <param name="population"> The population to form couples </param>
+    /// <param name="solutions"> The list of current solutions </param>
     /// <param name="ratedSolutions"> The rating of the solutions </param>
-    public ICollection<TCouple> FormCouples(TPopulation population, ICollection<KeyValuePair<TSolution, TRate>> ratedSolutions);
+    public List<TPopulation> SelectParents(List<TSolution> solutions, List<TRate> ratedSolutions);
 
     /// <summary>
     /// Breed a new population from the given couples. Each couple creates 2 offsprings
     /// </summary>
     /// <param name="couples"> The couples that will create the population </param>
     /// <returns> A new population </returns>
-    public TPopulation BreedNewPopulation(ICollection<TCouple> couples);
+    public TPopulation BreedNewPopulation(List<TPopulation> couples);
 
     /// <summary>
     /// Determines whether a satisfying solutions is found 

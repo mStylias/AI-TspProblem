@@ -2,8 +2,7 @@ using Tsp.Factories;
 
 namespace Tsp;
 
-public class TravelingSalesmanProblem : 
-    IGeneticAlgorithm<List<City>, List<City>, double, string>
+public class TravelingSalesmanProblem //: IGeneticAlgorithm<List<City>, Path, double>
 {
     public TspOptions Options { get; }
 
@@ -18,13 +17,13 @@ public class TravelingSalesmanProblem :
     public void Solve()
     {
         var cities = CreatePopulation();
-
+        var solutions = CreateRandomSolutions(cities);
+        
         while (IsAcceptableSolutionFound() == false)
         {
-            var solutions = CreateRandomSolutions(cities);
-            var solutionRatings = RateSolutions(cities, solutions);
-            var couples = FormCouples(cities, solutionRatings);
-            cities = BreedNewPopulation(couples);
+            // var solutionRatings = RateSolutions(cities, solutions);
+            // var parents = SelectParents(solutions, solutionRatings);
+            // cities = BreedNewPopulation(parents);
         }
         
         Console.WriteLine($"The best path that was found is");
@@ -32,39 +31,33 @@ public class TravelingSalesmanProblem :
 
     public List<City> CreatePopulation()
     {
-        CitiesFactory cityFactory = new CitiesFactory();
-        return cityFactory.CreateMultipleCities(Options.NumberOfCities);
+        return new CitiesFactory().CreateMultipleCities(Options.NumberOfCities);
     }
 
-    public ICollection<List<City>> CreateRandomSolutions(List<City> cities)
+    public List<Path> CreateRandomSolutions(List<City> cities)
     {
-        PathManagement pathManagement = new PathManagement();
+        var citiesDistances = new CitiesDistances();
+        citiesDistances.GenerateRandomDistances(cities, Options.MinDistanceCost, Options.MaxDistanceCost);
+        
+        var pathManagement = new PathManagement(citiesDistances);
         return pathManagement.GenerateRandomPaths(Options.NumberOfRandomPaths, cities);
     }
 
-    public ICollection<KeyValuePair<List<City>, double>> RateSolutions(List<City> cities, ICollection<List<City>> solutions)
+    public void RateSolutions(List<Path> solutions)
     {
-        // Generate random distance costs between all cities
-        var citiesDistances = new CitiesDistances();
-        citiesDistances.GenerateRandomDistanceCosts(cities,Options.MinimumDistanceCost, Options.MaximumDistanceCost);
-        
-        // Calculate the cost of each available path and add it to the dictionary
-        var solutionRatings = new Dictionary<List<City>, double>();
         foreach (var path in solutions)
         {
-            var cost = Cost.CalculatePathCost(path, citiesDistances);
-            solutionRatings.Add(path, cost);
+            Cost.CalculatePathCost(path);
         }
-
-        return solutionRatings;
     }
 
-    public ICollection<string> FormCouples(List<City> population, ICollection<KeyValuePair<List<City>, double>> ratedSolutions)
+    public List<PathPair> SelectParents(List<Path> paths)
     {
-        throw new NotImplementedException();
+        var pathCostSums = Cost.CalculatePathsCostSums(paths);
+        return Breeding.SelectCouples(paths, pathCostSums);
     }
 
-    public List<City> BreedNewPopulation(ICollection<string> couples)
+    public List<City> BreedNewPopulation(List<Path> parents)
     {
         throw new NotImplementedException();
     }

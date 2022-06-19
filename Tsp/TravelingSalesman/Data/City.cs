@@ -35,7 +35,6 @@ public class City
     /// with a dash in between.
     /// <para> E.g. 1001-0010 </para>
     /// </summary>
-    /// <returns></returns>
     public static string CreateCityPair(City city1, City city2)
     {
         return $"{city1.FormattedByte}-{city2.FormattedByte}";

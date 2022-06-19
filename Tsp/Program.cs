@@ -10,7 +10,10 @@ Tester tester = new Tester
 {
     DisplayFormat = DisplayFormat.Decimal
 };
+// tester.TestRandomDoubles();
+// tester.TestSortedDictionary();
 
 tester.TestCities();
 tester.TestPathManagement();
 tester.TestRateSolutions();
+tester.TestParentSelection();

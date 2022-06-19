@@ -8,13 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cca85ff-f363-4e96-bb33-f5e08c3dcdd8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Breeding.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Path.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/PathPair.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/IGeneticAlgorithm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/IGeneticAlgorithm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Mathematics/ExtraMath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Mathematics/ExtraMath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Tester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Tester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/CitiesDistances.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/CitiesDistances.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/City.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/Cost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Cost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/Factories/CitiesFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Factories/CitiesFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/PathManagement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/PathManagement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/TspOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TspOptions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" afterDir="false" />
@@ -93,7 +105,8 @@
       <workItem from="1655299340539" duration="260000" />
       <workItem from="1655299639123" duration="13210000" />
       <workItem from="1655315023878" duration="10812000" />
-      <workItem from="1655368414305" duration="990000" />
+      <workItem from="1655368414305" duration="9900000" />
+      <workItem from="1655475153633" duration="13780000" />
     </task>
     <servers />
   </component>
@@ -113,6 +126,19 @@
           <line>12</line>
           <properties documentPath="$PROJECT_DIR$/Tsp/TravelingSalesman.cs" initialLine="9" containingFunctionPresentation="constructor 'TravelingSalesman'" />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Breeding.cs</url>
+          <line>8</line>
+          <properties documentPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Breeding.cs" initialLine="8" containingFunctionPresentation="method 'SelectCouples'">
+            <startOffsets>
+              <option value="178" />
+            </startOffsets>
+            <endOffsets>
+              <option value="227" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
