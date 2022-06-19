@@ -11,7 +11,7 @@ public class Tester
 
     public Tester()
     {
-         TspOptions options = new TspOptions(10, 10, 5, 25);
+         TspOptions options = new TspOptions(15, 11, 5, 25);
          _tsp = new TravelingSalesmanProblem(options);
     }
     

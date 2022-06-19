@@ -54,7 +54,7 @@ public class TravelingSalesmanProblem //: IGeneticAlgorithm<List<City>, Path, do
     public List<PathPair> SelectParents(List<Path> paths)
     {
         var pathCostSums = Cost.CalculatePathsCostSums(paths);
-        return Breeding.SelectCouples(paths, pathCostSums);
+        return Breeding.SelectParents(paths, pathCostSums);
     }
 
     public List<City> BreedNewPopulation(List<Path> parents)
