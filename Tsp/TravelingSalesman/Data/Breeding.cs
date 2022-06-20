@@ -139,6 +139,7 @@ public static class Breeding
             // If some cities have already been added they are skipped
             // and the loop starts from the beginning until all cities
             // have been added
+            // City index starts from one and ends at -2 from count because the origin city is excluded
             if (cityIndex > parent2.Cities.Count - 2)
             {
                 cityIndex = 1;

@@ -62,7 +62,7 @@ public static class Logger
         foreach (var path in paths)
         {
             DisplayPath(format, path.Cities);
-            Console.WriteLine(isCostInverted ? $" -> {path.InvertedCost}" : $" -> {ExtraMath.InvertNumber(path.InvertedCost)}");
+            Console.WriteLine(isCostInverted ? $" -> {path.InvertedCost}" : $" -> {Math.Round(ExtraMath.InvertNumber(path.InvertedCost))}");
         }
     }
 

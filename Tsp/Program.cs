@@ -1,6 +1,10 @@
 ﻿using Tsp;
+using Tsp.Logging;
 
-TspOptions options = new TspOptions(10, 20, 5, 25);
+TspOptions options = new TspOptions(40, 30, 5, 25)
+{
+    DisplayFormat = DisplayFormat.Decimal
+};
 var tsp = new TravelingSalesmanProblem(options);
 tsp.Solve();
 

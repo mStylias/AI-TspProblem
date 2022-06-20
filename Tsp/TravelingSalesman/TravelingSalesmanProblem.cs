@@ -33,11 +33,11 @@ public class TravelingSalesmanProblem
             solutions = BreedNewPopulation(parents, cities[0]);
             RateSolutions(solutions);
         }
-
+        
         var bestSolution = Path.BestPath;
         Console.WriteLine("The best path that was found is:");
-        Logger.DisplayPath(DisplayFormat.Binary, bestSolution.Cities);
-        Console.WriteLine($"\nWith cost: {ExtraMath.InvertNumber(bestSolution.InvertedCost)}");
+        Logger.DisplayPath(Options.DisplayFormat, bestSolution.Cities);
+        Console.WriteLine($"\nWith cost: {Math.Round(ExtraMath.InvertNumber(bestSolution.InvertedCost))}");
     }
 
     public List<City> CreatePopulation()
@@ -82,12 +82,12 @@ public class TravelingSalesmanProblem
 
     public bool IsAcceptableSolutionFound(List<Path> solutions)
     {
-        var count = new Dictionary<Path, int>();
+        var count = new Dictionary<double, int>();
         foreach (var path in solutions) {
-            if (count.ContainsKey(path)) {
-                count[path]++;
+            if (count.ContainsKey(path.InvertedCost)) {
+                count[path.InvertedCost]++;
             } else {
-                count.Add(path, 1);
+                count.Add(path.InvertedCost, 1);
             }
         }
         
@@ -102,8 +102,6 @@ public class TravelingSalesmanProblem
         {
             return true;
         }
-        
-        Console.WriteLine(highestCount / solutions.Count);
 
         return false;
     }
