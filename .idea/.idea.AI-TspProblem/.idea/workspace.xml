@@ -9,11 +9,19 @@
   <component name="ChangeListManager">
     <list default="true" id="5cca85ff-f363-4e96-bb33-f5e08c3dcdd8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/IGeneticAlgorithm.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/Tester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Tester.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Breeding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Breeding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Cost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Cost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Path.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Path.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/PathManagement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/PathManagement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/TspOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TspOptions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/ref/Tsp.dll" afterDir="false" />
@@ -95,7 +103,9 @@
       <workItem from="1655315023878" duration="10812000" />
       <workItem from="1655368414305" duration="9900000" />
       <workItem from="1655475153633" duration="13780000" />
-      <workItem from="1655658135483" duration="4499000" />
+      <workItem from="1655658135483" duration="5520000" />
+      <workItem from="1655715746116" duration="6288000" />
+      <workItem from="1655733638255" duration="10396000" />
     </task>
     <servers />
   </component>
@@ -116,7 +126,25 @@
           <properties documentPath="$PROJECT_DIR$/Tsp/TravelingSalesman.cs" initialLine="9" containingFunctionPresentation="constructor 'TravelingSalesman'" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs</url>
+          <line>100</line>
+          <properties documentPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" initialLine="100" containingFunctionPresentation="method 'IsAcceptableSolutionFound'">
+            <startOffsets>
+              <option value="3060" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3102" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#System.Collections.Generic.KeyValuePair`2" memberName="Key" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -18,7 +18,7 @@ public static class Cost
         
         foreach (var path in paths)
         {
-            totalCost += path.Cost;
+            totalCost += path.InvertedCost;
             costAreas.Add(totalCost);
         }
 
@@ -32,12 +32,25 @@ public static class Cost
     /// <returns> The cost as an integer </returns>
     public static void CalculatePathCost(Path path)
     {
+        if (Path.CitiesDistances == null) throw new NullReferenceException("Cities distances have not been defined!");
+        
         int cost = 0;
         for (int i = 0; i < path.Cities.Count - 1; i++)
         {
-            cost += path.CitiesDistances.GetDistanceOf(path.Cities[i], path.Cities[i + 1]);
+            cost += Path.CitiesDistances.GetDistanceOf(path.Cities[i], path.Cities[i + 1]);
         }
 
-        path.Cost = ExtraMath.InvertNumber(cost);
+        path.InvertedCost = ExtraMath.InvertNumber(cost);
+        
+        // Modify the best cost if necessary
+        if (path.InvertedCost > Path.BestPath.InvertedCost)
+        {
+            Path.BestPath = path;
+            Path.CostCalculationsAfterBestPath = 0;
+        }
+        else
+        {
+            Path.CostCalculationsAfterBestPath++;
+        }
     }
 }

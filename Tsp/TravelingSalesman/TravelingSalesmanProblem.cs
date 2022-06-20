@@ -1,8 +1,10 @@
 using Tsp.Factories;
+using Tsp.Logging;
+using Tsp.Mathematics;
 
 namespace Tsp;
 
-public class TravelingSalesmanProblem //: IGeneticAlgorithm<List<City>, Path, double>
+public class TravelingSalesmanProblem
 {
     public TspOptions Options { get; }
 
@@ -18,15 +20,24 @@ public class TravelingSalesmanProblem //: IGeneticAlgorithm<List<City>, Path, do
     {
         var cities = CreatePopulation();
         var solutions = CreateRandomSolutions(cities);
+        RateSolutions(solutions);
         
-        while (IsAcceptableSolutionFound() == false)
+        Console.WriteLine("Starting cities:");
+        Logger.DisplayCities(Options.DisplayFormat, cities);
+        Console.WriteLine("Starting random paths");
+        Logger.DisplayPathsAndCosts(Options.DisplayFormat, solutions, false);
+        
+        while (IsAcceptableSolutionFound(solutions) == false)
         {
-            // var solutionRatings = RateSolutions(cities, solutions);
-            // var parents = SelectParents(solutions, solutionRatings);
-            // cities = BreedNewPopulation(parents);
+            var parents = SelectParents(solutions);
+            solutions = BreedNewPopulation(parents, cities[0]);
+            RateSolutions(solutions);
         }
-        
-        Console.WriteLine($"The best path that was found is");
+
+        var bestSolution = Path.BestPath;
+        Console.WriteLine("The best path that was found is:");
+        Logger.DisplayPath(DisplayFormat.Binary, bestSolution.Cities);
+        Console.WriteLine($"\nWith cost: {ExtraMath.InvertNumber(bestSolution.InvertedCost)}");
     }
 
     public List<City> CreatePopulation()
@@ -57,13 +68,43 @@ public class TravelingSalesmanProblem //: IGeneticAlgorithm<List<City>, Path, do
         return Breeding.SelectParents(paths, pathCostSums);
     }
 
-    public List<City> BreedNewPopulation(List<Path> parents)
+    public List<Path> BreedNewPopulation(List<PathPair> parents, City firstCity)
     {
-        throw new NotImplementedException();
+        bool isSolutionsNumOdd;
+
+        if (Options.NumberOfRandomPaths % 2 == 0) 
+            isSolutionsNumOdd = false;
+        else 
+            isSolutionsNumOdd = true;
+
+        return Breeding.BreedNewSolutions(parents, isSolutionsNumOdd, firstCity);
     }
 
-    public bool IsAcceptableSolutionFound()
+    public bool IsAcceptableSolutionFound(List<Path> solutions)
     {
-        throw new NotImplementedException();
+        var count = new Dictionary<Path, int>();
+        foreach (var path in solutions) {
+            if (count.ContainsKey(path)) {
+                count[path]++;
+            } else {
+                count.Add(path, 1);
+            }
+        }
+        
+        double highestCount = 0;
+        foreach (var pair in count) {
+            if (pair.Value > highestCount) {
+                highestCount = pair.Value;
+            }
+        }
+
+        if (highestCount / solutions.Count > 0.95)
+        {
+            return true;
+        }
+        
+        Console.WriteLine(highestCount / solutions.Count);
+
+        return false;
     }
 }

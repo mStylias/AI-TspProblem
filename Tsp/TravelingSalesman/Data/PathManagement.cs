@@ -2,11 +2,9 @@ namespace Tsp;
 
 public class PathManagement
 {
-    public CitiesDistances CitiesDistances { get; }
-
     public PathManagement(CitiesDistances citiesDistances)
     {
-        CitiesDistances = citiesDistances;
+        Path.CitiesDistances = citiesDistances;
     }
 
     /// <summary>
@@ -47,6 +45,6 @@ public class PathManagement
         cities.Add(firstCity);
         cities.AddRange(citiesToShuffle.OrderBy(item => random.Next()).ToList());
         cities.Add(firstCity);
-        return new Path(cities, CitiesDistances);
+        return new Path(cities);
     }
 }

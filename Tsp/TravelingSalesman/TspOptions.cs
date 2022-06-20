@@ -1,3 +1,5 @@
+using Tsp.Logging;
+
 namespace Tsp;
 
 /// <summary>
@@ -9,6 +11,8 @@ public class TspOptions
     public int NumberOfRandomPaths { get; }
     public int MinDistanceCost { get; }
     public int MaxDistanceCost { get; }
+
+    public DisplayFormat DisplayFormat { get; set; } = DisplayFormat.Binary;
     
     public TspOptions(int numberOfCities, int numberOfRandomPaths, int minDistanceCost, int maxDistanceCost)
     {

@@ -11,7 +11,7 @@ public class Tester
 
     public Tester()
     {
-         TspOptions options = new TspOptions(15, 11, 5, 25);
+         TspOptions options = new TspOptions(10, 10, 5, 25);
          _tsp = new TravelingSalesmanProblem(options);
     }
     
@@ -65,7 +65,7 @@ public class Tester
         var paths = _tsp.CreateRandomSolutions(cities);
         _tsp.RateSolutions(paths);
     
-        Logger.DisplayPathsAndCosts(DisplayFormat, paths);
+        Logger.DisplayPathsAndCosts(DisplayFormat, paths, false);
         DisplayTestPassed(3);
     }
     
@@ -76,11 +76,29 @@ public class Tester
         _tsp.RateSolutions(paths);
         var parents = _tsp.SelectParents(paths);
         
-        Logger.DisplayPathsAndCosts(DisplayFormat, paths);
+        Logger.DisplayPathsAndCosts(DisplayFormat, paths, false);
         
         Console.WriteLine("\nSelected parents");
         Logger.DisplayPathPairs(DisplayFormat, parents, true);
 
         DisplayTestPassed(4);
+    }
+
+    public void TestBreeding()
+    {
+        var cities = _tsp.CreatePopulation();
+        var paths = _tsp.CreateRandomSolutions(cities);
+        _tsp.RateSolutions(paths);
+        var parents = _tsp.SelectParents(paths);
+        var newGeneration = _tsp.BreedNewPopulation(parents, cities[0]);
+        
+        Logger.DisplayPathsAndCosts(DisplayFormat, paths, false);
+        
+        Console.WriteLine("New generation:");
+        
+        _tsp.RateSolutions(newGeneration);
+        Logger.DisplayPathsAndCosts(DisplayFormat, newGeneration, false);
+
+        DisplayTestPassed(5);
     }
 }

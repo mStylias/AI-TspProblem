@@ -1,3 +1,5 @@
+using Tsp.Mathematics;
+
 namespace Tsp.Logging;
 
 public static class Logger
@@ -53,14 +55,14 @@ public static class Logger
         }
     }
     
-    public static void DisplayPathsAndCosts(DisplayFormat format, List<Path> paths)
+    public static void DisplayPathsAndCosts(DisplayFormat format, List<Path> paths, bool isCostInverted)
     {
         Console.WriteLine("City Paths with costs:");
 
         foreach (var path in paths)
         {
             DisplayPath(format, path.Cities);
-            Console.WriteLine($" -> {path.Cost}");
+            Console.WriteLine(isCostInverted ? $" -> {path.InvertedCost}" : $" -> {ExtraMath.InvertNumber(path.InvertedCost)}");
         }
     }
 
@@ -70,9 +72,9 @@ public static class Logger
         {
             Console.WriteLine($"Couple {i + 1}");
             DisplayPath(format, pathPairs[i].Path1.Cities);
-            if (includeCosts) Console.WriteLine($" -> {pathPairs[i].Path1.Cost}");
+            if (includeCosts) Console.WriteLine($" -> {pathPairs[i].Path1.InvertedCost}");
             DisplayPath(format, pathPairs[i].Path2.Cities);
-            if (includeCosts) Console.WriteLine($" -> {pathPairs[i].Path2.Cost}");
+            if (includeCosts) Console.WriteLine($" -> {pathPairs[i].Path2.InvertedCost}");
         }
     }
 }
