@@ -8,15 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cca85ff-f363-4e96-bb33-f5e08c3dcdd8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AI-TspProblem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Logging/Logger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Breeding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/Data/Breeding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/TravelingSalesman/TravelingSalesmanProblem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/bin/Debug/net6.0/Tsp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tsp/obj/Debug/net6.0/Tsp.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.~lock.Presentation.doc#" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +88,7 @@
       <workItem from="1655475153633" duration="13780000" />
       <workItem from="1655658135483" duration="5520000" />
       <workItem from="1655715746116" duration="6288000" />
-      <workItem from="1655733638255" duration="11757000" />
+      <workItem from="1655733638255" duration="12142000" />
     </task>
     <servers />
   </component>

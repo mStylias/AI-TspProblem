@@ -4,7 +4,7 @@ using Tsp.Mathematics;
 
 namespace Tsp;
 
-public class TravelingSalesmanProblem
+public class TravelingSalesmanProblem : IGeneticAlgorithm
 {
     public TspOptions Options { get; }
 
