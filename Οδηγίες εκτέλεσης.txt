@@ -1,0 +1,13 @@
+ Για την εκτέλεση της εφαρμογής απαιτείται το .NET 6 runtime environment, το οποίο υπάρχει στον εξής σύνδεσμο:
+ https://dotnet.microsoft.com/en-us/download
+
+    Οδηγίες εκτέλεσης:
+* Για windows:
+ 1) Άνοιγμα γραμμής εντολών στον φάκελο /Executables/Windows
+ 2)
+
+* Για linux:
+ 1) Άνοιγμα terminal στον φάκελο /Executables/Linux
+ 2) Εκτέλεση εντολής: ./Tsp
+
+Σημείωση τα εκτελέσιμα αφορούν 20 πόλεις με 15 διαδρομές

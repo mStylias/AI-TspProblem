@@ -2,7 +2,7 @@
 using Tsp.Logging;
 using Path = Tsp.Path;
 
-var options = new TspOptions(30, 30, 5, 25)
+var options = new TspOptions(20, 15, 5, 25)
 {
     DisplayFormat = DisplayFormat.Binary
 };
