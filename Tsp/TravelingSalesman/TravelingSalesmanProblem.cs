@@ -4,7 +4,7 @@ using Tsp.Mathematics;
 
 namespace Tsp;
 
-public class TravelingSalesmanProblem : IGeneticAlgorithm
+public class TravelingSalesmanProblem : IGeneticAlgorithm<City, Path, PathPair>
 {
     public TspOptions Options { get; }
 
@@ -24,10 +24,10 @@ public class TravelingSalesmanProblem : IGeneticAlgorithm
         
         Console.WriteLine("Starting cities:");
         Logger.DisplayCities(Options.DisplayFormat, cities);
-        Console.WriteLine("Starting random paths");
+        Console.WriteLine("\nStarting random paths");
         Logger.DisplayPathsAndCosts(Options.DisplayFormat, solutions, false);
         
-        while (IsAcceptableSolutionFound(solutions) == false)
+        while (AreSolutionsConverging(solutions) == false)
         {
             var parents = SelectParents(solutions);
             solutions = BreedNewPopulation(parents, cities[0]);
@@ -80,8 +80,9 @@ public class TravelingSalesmanProblem : IGeneticAlgorithm
         return Breeding.BreedNewSolutions(parents, isSolutionsNumOdd, firstCity);
     }
 
-    public bool IsAcceptableSolutionFound(List<Path> solutions)
+    public bool AreSolutionsConverging(List<Path> solutions)
     {
+        // Store the number of times each cost appears
         var count = new Dictionary<double, int>();
         foreach (var path in solutions) {
             if (count.ContainsKey(path.InvertedCost)) {
@@ -91,6 +92,7 @@ public class TravelingSalesmanProblem : IGeneticAlgorithm
             }
         }
         
+        // Get the cost with the highest number of appearances
         double highestCount = 0;
         foreach (var pair in count) {
             if (pair.Value > highestCount) {
@@ -98,6 +100,7 @@ public class TravelingSalesmanProblem : IGeneticAlgorithm
             }
         }
 
+        // If the solutions converge for more than 95% return true
         if (highestCount / solutions.Count > 0.95)
         {
             return true;

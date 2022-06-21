@@ -1,18 +1,20 @@
 ﻿using Tsp;
 using Tsp.Logging;
+using Path = Tsp.Path;
 
-TspOptions options = new TspOptions(40, 30, 5, 25)
+var options = new TspOptions(30, 30, 5, 25)
 {
-    DisplayFormat = DisplayFormat.Decimal
+    DisplayFormat = DisplayFormat.Binary
 };
-var tsp = new TravelingSalesmanProblem(options);
-tsp.Solve();
 
+IGeneticAlgorithm<City, Path, PathPair> tsp = new TravelingSalesmanProblem(options);
+tsp.Solve();
 
 // Tester tester = new Tester
 // {
-//     DisplayFormat = DisplayFormat.Decimal
+//     DisplayFormat = DisplayFormat.Binary
 // };
+
 // tester.TestRandomDoubles();
 // tester.TestSortedDictionary();
 

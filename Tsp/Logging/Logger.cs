@@ -72,9 +72,9 @@ public static class Logger
         {
             Console.WriteLine($"Couple {i + 1}");
             DisplayPath(format, pathPairs[i].Path1.Cities);
-            if (includeCosts) Console.WriteLine($" -> {pathPairs[i].Path1.InvertedCost}");
+            if (includeCosts) Console.WriteLine($" -> {Math.Round(ExtraMath.InvertNumber(pathPairs[i].Path1.InvertedCost))}");
             DisplayPath(format, pathPairs[i].Path2.Cities);
-            if (includeCosts) Console.WriteLine($" -> {pathPairs[i].Path2.InvertedCost}");
+            if (includeCosts) Console.WriteLine($" -> {Math.Round(ExtraMath.InvertNumber(pathPairs[i].Path2.InvertedCost))}");
         }
     }
 }

@@ -11,8 +11,8 @@ public class Tester
 
     public Tester()
     {
-         TspOptions options = new TspOptions(10, 10, 5, 25);
-         _tsp = new TravelingSalesmanProblem(options);
+        TspOptions options = new TspOptions(10, 15, 5, 25);
+        _tsp = new TravelingSalesmanProblem(options);
     }
     
     private static void DisplayTestPassed(int testNum)
@@ -92,7 +92,7 @@ public class Tester
         var parents = _tsp.SelectParents(paths);
         var newGeneration = _tsp.BreedNewPopulation(parents, cities[0]);
         
-        Logger.DisplayPathsAndCosts(DisplayFormat, paths, false);
+        Logger.DisplayPathPairs(DisplayFormat, parents, true);
         
         Console.WriteLine("New generation:");
         

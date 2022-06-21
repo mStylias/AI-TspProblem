@@ -45,7 +45,7 @@ public static class Breeding
     /// Picks 1 random parent according to the paths costs
     /// </summary>
     /// <param name="paths"> The available paths to choose from </param>
-    /// <param name="pathsCostSums"> The cost of each path </param>
+    /// <param name="pathsCostSums"> The cost of each path (the last element is the sum of all costs) </param>
     /// <param name="parents"> The parents list </param>
     /// <param name="parentIndex"> The current parent index </param>
     /// <param name="random"> A random number generator </param>

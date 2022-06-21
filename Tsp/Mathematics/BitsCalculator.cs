@@ -41,7 +41,7 @@ public static class BitsCalculator
     /// would be the following string: 0001 </para>
     /// </summary>
     /// <param name="targetByte"> The target byte </param>
-    /// <param name="numberOfBits"> The number of bytes that the bit should contain </param>
+    /// <param name="numberOfBits"> The number of bits that the byte should contain </param>
     /// <returns></returns>
     public static string FormatByte(byte targetByte, int numberOfBits)
     {
